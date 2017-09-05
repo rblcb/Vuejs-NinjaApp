@@ -1,21 +1,20 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-    <p>{{greeting()}}</p>
+    <ninjas></ninjas>
   </div>
 </template>
 
 <script>
+import Ninjas from './Ninjas.vue'
+
 export default {
-  name: 'app',
+  components: {
+    'ninjas': Ninjas
+  },
   data () {
     return {
-      title: 'Hello VueJS'
-    }
-  },
-  methods: {
-    greeting: function() {
-      return 'Hi Ding';
+      title: 'Ninja Apps'
     }
   }
 }
