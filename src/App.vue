@@ -24,6 +24,9 @@
     </keep-alive>
     <button v-on:click="component='form-one'">Go to form-one</button>
     <button v-on:click="component='form-two'">Go to form-two</button>
+    <hr/>
+    //Add blog
+    <add-Blog></add-Blog>
   </div>
 </template>
 
@@ -34,6 +37,7 @@ import Heroes from './components/Heroes.vue';
 import formHelper from './components/formHelper.vue';
 import formOne from './components/form-one.vue';
 import formTwo from './components/form-two.vue';
+import addBlog from './components/addBlog.vue';
 
 
 export default {
@@ -43,7 +47,8 @@ export default {
     'app-heroes': Heroes,
     'form-Helper': formHelper,
     'form-one': formOne,
-    'form-two': formTwo
+    'form-two': formTwo,
+    'add-Blog': addBlog
   },
   data () {
     return {
